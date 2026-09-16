@@ -3,7 +3,8 @@ import { router } from "expo-router";
 import React from "react";
 import { Pressable, Text, View } from "react-native";
 import LinkElement from "../components/link_element";
-import AddressForm, { AddressFormHandle, GooglePlaceData } from "../components/address_form";
+import AddressForm, { AddressFormHandle } from "../components/address_form";
+import { GooglePlaceData } from "../types/routeTypes";
 
 export default function RunMaker() {
   const [distance, setDistance] = React.useState<number | null>(null);
